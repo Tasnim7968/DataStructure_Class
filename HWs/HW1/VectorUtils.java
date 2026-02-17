@@ -2,7 +2,6 @@ import java.util.Vector;
 
 public class VectorUtils {
 
-    // Simple Predicate interface (so you don't depend on java.util.function.Predicate)
     public interface Predicate<T> {
         boolean test(T value);
     }
