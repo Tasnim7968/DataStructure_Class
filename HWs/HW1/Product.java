@@ -80,10 +80,6 @@ public class Product implements Comparable<Product> {
         return Objects.hash(productId);
     }
 
-    /**
-     * Comparable is needed to test VectorUtils.findMax with Product.
-     * Here we compare by productId lexicographically (stable & simple).
-     */
     @Override
     public int compareTo(Product other) {
         if (other == null) return 1;
